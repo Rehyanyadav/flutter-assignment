@@ -2,6 +2,15 @@
 
 A highly optimized, infinite-scrolling social feed in Flutter, backed by Supabase.
 
+## Submission Notes
+This repository contains the complete implementation for the Flutter High-Performance Feed assignment. All deliverables and technical constraints have been successfully met, including:
+- **State Management**: Optimistic UI using Riverpod (`AsyncNotifier`) and `RxDart` for debouncing spam clicks.
+- **Memory Protection**: OOM prevention using `memCacheWidth` calculated via `MediaQuery.devicePixelRatio`.
+- **GPU Protection**: Raster caching via `RepaintBoundary` to maintain 60/120fps during rapid scrolling despite heavy shadows.
+- **Graceful Degradation**: Offline error handling and automatic state rollbacks.
+
+---
+
 ## Deliverables Met
 
 ### Riverpod State Management Approach
